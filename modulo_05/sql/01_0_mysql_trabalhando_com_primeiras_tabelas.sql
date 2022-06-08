@@ -30,7 +30,7 @@ CREATE TABLE video(
     seo INT NOT NULL,
     title VARCHAR(45) NOT NULL,
     likes INT NOT NULL,
-    deslikes INT NOT NULL,
+    dislikes INT NOT NULL,
     CONSTRAINT fk_author_video FOREIGN KEY (author) REFERENCES author(id),
     CONSTRAINT fk_seo FOREIGN KEY (seo) REFERENCES seo(id)
     
@@ -68,12 +68,12 @@ INSERT INTO seo (category) VALUE ('FRONT END');
 INSERT INTO seo (category) VALUE ('BACK END');
 
 -- Insere os dados na tabela video
-INSERT INTO video (author, title, likes, deslikes, seo) VALUE (1, 'MYSQL', 100, 2, 2);
-INSERT INTO video (author, title, likes, deslikes, seo) VALUE (1, 'HTML', 120, 1, 1);
-INSERT INTO video (author, title, likes, deslikes, seo) VALUE (1, 'CSS', 125, 0, 1);
-INSERT INTO video (author, title, likes, deslikes, seo) VALUE (2, 'JAVASCRIPT', 130, 3, 1);
-INSERT INTO video (author, title, likes, deslikes, seo) VALUE (3, 'PYTHON', 200, 0, 2);
-INSERT INTO video (author, title, likes, deslikes, seo) VALUE (3, 'PHP', 80, 2, 2);
+INSERT INTO video (author, title, likes, dislikes, seo) VALUE (1, 'MYSQL', 100, 2, 2);
+INSERT INTO video (author, title, likes, dislikes, seo) VALUE (1, 'HTML', 120, 1, 1);
+INSERT INTO video (author, title, likes, dislikes, seo) VALUE (1, 'CSS', 125, 0, 1);
+INSERT INTO video (author, title, likes, dislikes, seo) VALUE (2, 'JAVASCRIPT', 130, 3, 1);
+INSERT INTO video (author, title, likes, dislikes, seo) VALUE (3, 'PYTHON', 200, 0, 2);
+INSERT INTO video (author, title, likes, dislikes, seo) VALUE (3, 'PHP', 80, 2, 2);
 
 -- Insere os dados na tabela playlist
 INSERT INTO playlist (title, author) VALUE ('MYSQL + PHP + HTML + CSS + JAVASCRIPT', 4);    -- playlist 1
