@@ -1,3 +1,5 @@
+
+//função anônima
 const retornaNomes = function(){
     return this.nome;
 }
